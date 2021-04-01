@@ -98,7 +98,7 @@ def get_az_monitor_diagnostic_setting(rgs):
                     print(f"Error - Couldn't apply all diagnostic settings to {account.name}")
 
 def main():
-    rgs = get_resources()
+    rgs = list_resource_groups()
     get_az_monitor_diagnostic_setting(rgs)
 
 
